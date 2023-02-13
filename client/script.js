@@ -80,7 +80,8 @@ const handleSubmit = async (e) => {
   loader(messageDiv)
 
   //调用openai的接口 获取chatGPT的回复
-  const response = await fetch('http://localhost:3000/', {
+  // const response = await fetch('http://localhost:3000/', {
+  const response = await fetch('https://hzycodex.onrender.com/', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
